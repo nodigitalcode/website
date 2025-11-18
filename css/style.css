@@ -69,6 +69,7 @@ body {
     display: flex;
     list-style: none;
     gap: 30px;
+    
 }
 
 .nav-link {
@@ -1251,5 +1252,63 @@ body {
 
     .icon-3 {
         bottom: -30px;
+    }
+}
+
+
+
+/* Adicione este CSS ao seu arquivo style.css */
+
+/* Botão Login no Header */
+.nav-menu {
+    align-items: center;
+}
+
+.login-item {
+    display: flex;
+    align-items: center;
+}
+
+.login-button {
+    background-color: #F0A241;
+    color: var(--white);
+    padding: 10px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.login-button:hover {
+    background-color: #d98f2e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(240, 162, 65, 0.3);
+}
+
+.login-button::after {
+    display: none;
+}
+
+/* Ajustes para Mobile */
+@media (max-width: 768px) {
+    .nav-menu .login-item {
+        margin-top: 10px;
+    }
+    
+    .login-button {
+        display: block;
+        text-align: center;
+        width: 200px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-button {
+        width: 160px;
+        padding: 10px 20px;
+        font-size: 15px;
     }
 }
